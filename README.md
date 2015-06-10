@@ -9,14 +9,15 @@ As currently configured, this raises the error mentioned at
 
 ## Setup
 
-0. `bundle exec rake db:migrate`
+0. `bundle`
+0. `bundle exec rake db:migrate db:test:prepare`
 
 ## To reproduce:
 
-0. `bundle exec guard`
-0. Open `spec/models/user_spec.rb` in your editor. Save.
-
-This produces the following output:
+0. `bundle exec guard`.
+  * This produces the deprecation warning below.
+  * (Thanks to Guard's awesomeness), the deprecation warning will continue to
+    occur whenever you save a file in the repo.
 
 ```
 16:47:54 - INFO - Running: spec
