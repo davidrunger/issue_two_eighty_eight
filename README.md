@@ -9,12 +9,11 @@ As currently configured, this raises the error mentioned at
 
 ## Setup
 
-0. `bundle`
-0. `bundle exec rake db:migrate db:test:prepare`
+0. `bundle && bundle exec rake db:migrate db:test:prepare`
 
 ## To reproduce:
 
-0. `bundle exec guard`.
+0. `bundle exec guard`
   * This produces the deprecation warning below.
   * (Thanks to Guard's awesomeness), the deprecation warning will continue to
     occur whenever you save a file in the repo.
